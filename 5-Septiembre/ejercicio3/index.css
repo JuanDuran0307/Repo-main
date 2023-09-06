@@ -1,0 +1,100 @@
+body {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Columnas: barra lateral de ancho fijo y sección principal de ancho flexible */
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+    gap: 20px; /* Espacio entre las columnas y filas */
+    padding: 20px;
+}
+
+.header {
+    grid-area: header; /* Coloca el encabezado en la celda correspondiente */
+    background-color: #67aad6;
+    color: #fff;
+    padding: 10px;
+
+}
+.header h2{
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    
+}
+.nav a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
+}
+svg {
+    width: 25px;
+    color: white;
+}
+
+
+.sidebar {
+    grid-area: sidebar; /* Coloca la barra lateral en la celda correspondiente */
+    background-color: #2a92e7;
+    color: #fff;
+    padding: 10px;
+}
+.sidebar h3{
+    display: flex;
+    align-items: center;
+    background-color: steelblue;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-left: 5px solid rgb(11, 170, 243);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    
+}
+
+.main-content {
+    grid-area: main; /* Coloca la sección principal en la celda correspondiente */
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.main-content h1{
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        
+}
+img{
+    width: 250px;
+    height: 300px;;
+     
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5rem;
+}
+
+/* Estilos adicionales para hacer que el diseño sea responsive */
+@media (max-width: 768px) {
+    body {  
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            ;
+    }
+
+    .sidebar {
+        order: 3; /* Cambiar el orden para mostrar la barra lateral debajo en pantallas pequeñas */
+    }
+}

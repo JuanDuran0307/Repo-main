@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    height: 2.75rem;
+    margin-top: 20px;
+
+}
+.part1{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background-color: white;
+    height: 2.75rem;
+
+}
+.part1 a, h2{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.part1 img{
+    background-color: rgb(10, 92, 199);
+    height: 43px;
+}
+
+.part2{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    background-color: white;
+    height: 2.75rem;
+    margin-right: 1rem;
+}
+.part2 a,button {
+    background-color: white;
+    text-decoration: none;
+    color: black;    
+}
+.part2 p {
+    background-color: rgb(10, 92, 199);
+    color: white;
+    padding: 10px;
+}
+.part2 svg {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;   
+
+}
+.titulo {
+    margin-top: 3rem;
+    font-size: 23px;
+    color: white;
+}
+.p {
+    margin-top: 1rem;
+    color: white;
+}
+.found {
+    margin-top: 3rem;
+}
+.found span {
+    padding: 1.4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(10, 92, 199);
+}
+.content-imgs {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.content-imgs div img{
+    background-color: rgb(10, 92, 199);
+    width: 250px;
+    height: 250px;
+}
+
